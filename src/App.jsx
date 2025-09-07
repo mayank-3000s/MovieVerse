@@ -14,7 +14,7 @@ const App = ()=>{
       element: <AppLayout />,
       errorElement: <ErrorPage />,
       children: [
-        {path:'/', element: <Home />},
+        {index: true, element: <Home />},
         {path:'/movie', element: <Movie />, loader: getApiData,},
         {path:'/about', element: <About />},
         {path:'/contact', element: <Contact />, action: contactData}
